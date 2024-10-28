@@ -1,0 +1,27 @@
+﻿<Window x:Class="PrimeCheckerDZ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeCheckerDZ"
+        mc:Ignorable="d"
+        Title="Prime Checker" Height="400" Width="500">
+    <Grid>
+        <!-- Ввод числа вручную -->
+        <TextBox Name="txtNumberInput" Width="200" Height="30" Margin="20,20,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <!-- Кнопка проверки числа -->
+        <Button Content="Проверить число" Width="150" Height="30" Margin="250,20,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"
+                Click="BtnCheckPrime_Click"/>
+
+        <!-- Кнопка загрузки файла -->
+        <Button Content="Загрузить файл" Width="150" Height="30" Margin="250,60,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"
+                Click="BtnLoadFile_Click"/>
+
+        <!-- Список результатов -->
+        <ListBox Name="lstResults" Width="440" Height="200" Margin="20,100,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <!-- Статус -->
+        <Label Name="lblStatus" Width="440" Height="30" Margin="20,320,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Готов"/>
+    </Grid>
+</Window>
